@@ -1,6 +1,6 @@
 
 
-![Logo](https://upload.wikimedia.org/wikipedia/commons/b/b0/Logo_of_Max_Fashion_and_Accessories%2C_March_2018.png)
+![Logo](https://static.businessworld.in/article/article_large_image/1526969514_aabfKn_max.png)
 
 
 # Max Fashion - Unit 4 Backend Project
