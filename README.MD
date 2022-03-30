@@ -14,7 +14,7 @@ This is a follow up project of unit 3 project.In unit 3 we were focus on fronten
 
 ## Authors
 
-- [Akashy Kumar](https://github.com/Akshay-Singh-Rajput)
+- [Akashay Kumar](https://github.com/Akshay-Singh-Rajput)
 - [Aditya Choubey](https://github.com/Aadi0706)
 - [Bhanujit Halder](https://github.com/Bhanujit)
 - [Roshan Arikar ](https://github.com/roshanarikar)
@@ -27,7 +27,7 @@ This is a follow up project of unit 3 project.In unit 3 we were focus on fronten
 
 **Client:** HTML, CSS, JavaScript
 
-**Server:** NodeJS, Express, MongoDB
+**Server:** NodeJS, Express, MongoDB, NPM
 
 
 ## Demo
