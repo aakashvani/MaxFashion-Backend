@@ -4,12 +4,31 @@ const router = express.Router();
 
 const Product = require("../models/product.models");
 
-router.get("/women", async (req, res) => {
+/// prdoucts== womens data
+
+
+router.get("/products", async (req, res) => {
     try {
 
-        const product = await Product.find().lean().exec();
+        const products = await Product.find().lean().exec();
+        // console.log(products);
 
-        return res.status(201).send(Product);
+        return res.status(200).send(products);
+
+    } catch (error) {
+
+        return res.status(500).send({message: error.message});
+
+    }
+});
+
+router.get("/products/:id", async (req, res) => {
+    try {
+
+        const products = await Product.findById(req.params.id).lean().exec();
+        
+
+        return res.status(200).send(products);
 
     } catch (error) {
 
@@ -19,20 +38,9 @@ router.get("/women", async (req, res) => {
 });
 
 
-router.get("/men", async (req, res) => {
-    try {
-
-        const product = await Product.find().lean().exec();
-
-        return res.status(201).send(Product);
-
-    } catch (error) {
-
-        return res.status(500).send({message: error.message});
-
-    }
-});
 
 
 
-model.exports = router;
+
+
+module.exports = router;

@@ -10,7 +10,6 @@ const cors = require('cors');
 const cartController = require("./controllers/cart.controllers");
 
 
-
 const app = express();
 const passport = require("./configs/google-oauth")
 
@@ -45,6 +44,8 @@ app.use(cors());
 
 
 app.use("/carts", cartController)
+
+
 
 
 module.exports  = app;

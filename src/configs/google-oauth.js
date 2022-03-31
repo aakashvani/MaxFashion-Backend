@@ -26,6 +26,7 @@ passport.use(new GoogleStrategy({
     }
 
     console.log(user)
+   
     return cb(null, user);
   }
 ));
