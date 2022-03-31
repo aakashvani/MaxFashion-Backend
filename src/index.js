@@ -1,7 +1,7 @@
 
 const connect = require("./configs/db");
 // const userController = require("./controllers/user.controller")
-// const productController = require("./controllers/product.controller")
+ 
 
 const {register,login, generateToken} = require("./controllers/auth.controller")
 
@@ -22,7 +22,7 @@ app.post("/register", register)
 
 app.post("/login", login)
 
-// app.use("/products", productController)
+
 
 app.get('/auth/google',
   passport.authenticate('google', { scope: ['profile', 'email'] }));
