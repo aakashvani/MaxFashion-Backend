@@ -14,7 +14,7 @@ This is a follow up project of unit 3 project.In unit 3 we were focus on fronten
 
 ## Authors
 
-- [Akashay Kumar](https://github.com/Akshay-Singh-Rajput)
+- [Akshay Kumar](https://github.com/Akshay-Singh-Rajput)
 - [Aditya Choubey](https://github.com/Aadi0706)
 - [Bhanujit Halder](https://github.com/Bhanujit)
 - [Roshan Arikar ](https://github.com/roshanarikar)
