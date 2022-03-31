@@ -1,13 +1,22 @@
 
 
+// const userController = require("./controllers/")
+
+
+
 // const userController = require("./controllers/user.controller")
 // const productController = require("./controllers/product.controller")
+
 
 const {register,login, generateToken} = require("./controllers/auth.controller")
 
 const express = require('express');
 const cors = require('cors');
 const cartController = require("./controllers/cart.controllers");
+
+const productController = require("./controllers/product.controllers"); const mensproductcontroller = require("./controllers/mensproduct.controller") 
+
+
 
 
 const app = express();
@@ -23,7 +32,7 @@ app.post("/register", register)
 
 app.post("/login", login)
 
-// app.use("/products", productController)
+app.use("/products", productController)
 
 app.get('/auth/google',
   passport.authenticate('google', { scope: ['profile', 'email'] }));
@@ -44,7 +53,7 @@ app.use(cors());
 
 
 app.use("/carts", cartController)
-
+app.use("", productController); app.use("",mensproductcontroller); 
 
 
 
