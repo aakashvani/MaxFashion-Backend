@@ -8,7 +8,7 @@ const {register,login, generateToken} = require("./controllers/auth.controller")
 const express = require('express');
 const cors = require('cors');
 const cartController = require("./controllers/cart.controllers");
-const womensdatasController = require('./controllers/women.controller')
+
 const app = express();
 const passport = require("./configs/google-oauth")
 
@@ -43,7 +43,7 @@ app.use(cors());
 
 
 app.use("/carts", cartController)
-app.use("/womensdatas", womensdatasController);
+
 
 
 

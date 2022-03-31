@@ -6,7 +6,7 @@ const verifyToken = (token) => {
         jwt.verify(token, process.env.SECRET_KEY, (err,decoded) => {
             if(err) return reject(err)
     
-            return resolve(decoded)
+            return resolve(decoded);
         });
     })
     
