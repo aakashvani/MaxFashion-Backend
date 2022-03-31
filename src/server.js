@@ -12,4 +12,5 @@ app.listen(5000, async () => {
     } catch (err) {
         console.error(err.message);
     }
-})
+});
+
