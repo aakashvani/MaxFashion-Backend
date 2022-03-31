@@ -9,6 +9,7 @@ const express = require('express');
 const cors = require('cors');
 const cartController = require("./controllers/cart.controllers");
 const productController = require("./controllers/product.controllers");
+const mensproductcontroller = require("./controllers/mensproduct.controller")
 
 const app = express();
 const passport = require("./configs/google-oauth")
@@ -45,6 +46,7 @@ app.use(cors());
 
 app.use("/carts", cartController)
 app.use("", productController);
+app.use("",mensproductcontroller);
 
 
 

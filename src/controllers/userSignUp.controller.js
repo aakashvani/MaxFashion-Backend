@@ -4,11 +4,4 @@ const app = express();
 const router = express.router();
 
 
-
-
-
-
-
-
-
 module.exports = router;
