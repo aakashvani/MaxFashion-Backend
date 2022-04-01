@@ -1,7 +1,10 @@
 // Package & Library imports
 const express = require("express");
 const cors = require("cors");
-// const userController = require("./controllers/")
+
+const app = express();
+app.use(express.json());
+app.use(cors());
 
 //Path imports
 const {
@@ -15,9 +18,6 @@ const cartController = require("./controllers/cart.controllers");
 const passport = require("./configs/google-oauth");
 const signupController = require('./controllers/userSignUp.controller')
 
-const app = express();
-app.use(express.json());
-app.use(cors());
 
 // Google OAuth- Login & Signup
 app.post("/register", register);
@@ -37,6 +37,7 @@ app.get(
 
   function (req, res) {
     // console.log(req.user)
+    return res.redirect('http://127.0.0.1:5502/index.html')
     const token = generateToken(req.user);
     return res.status(200).send({ user: req.user, token });
   }
@@ -44,7 +45,6 @@ app.get(
 
 // Route passing => Controllers
 app.use("/products", productController);
-// app.use("/users", userController)
 app.use("/carts", cartController);
 app.use("", productController);
 app.use("", mensproductcontroller);
