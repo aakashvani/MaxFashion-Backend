@@ -1,49 +1,51 @@
-
+// Package & Library imports
+const express = require("express");
+const cors = require("cors");
 // const userController = require("./controllers/")
 
-
-const {register,login, generateToken} = require("./controllers/auth.controller")
-
-const express = require('express');
-const cors = require('cors');
+//Path imports
+const {
+  register,
+  login,
+  generateToken,
+} = require("./controllers/auth.controller");
+const mensproductcontroller = require("./controllers/mensproduct.controller");
+const productController = require("./controllers/product.controllers");
 const cartController = require("./controllers/cart.controllers");
-const productController = require("./controllers/product.controllers"); const mensproductcontroller = require("./controllers/mensproduct.controller") 
+const passport = require("./configs/google-oauth");
+
 const app = express();
-const passport = require("./configs/google-oauth")
-
-
 app.use(express.json());
-
-
-// app.use("/users", userController)
-
-app.post("/register", register)
-
-app.post("/login", login)
-
-app.use("/products", productController)
-
-app.get('/auth/google',
-  passport.authenticate('google', { scope: ['profile', 'email'] }));
- 
-app.get(
-'/auth/google/callback', 
-  passport.authenticate('google', { failureRedirect: '/login', session:false } ),
-
-  function(req, res) {
-    // console.log(req.user)
-    const token = generateToken(req.user)
-    return res.status(200).send({user:req.user, token})
-  }
-)
-
-
 app.use(cors());
 
+// Google OAuth- Login & Signup
+app.post("/register", register);
+app.post("/login", login);
 
-app.use("/carts", cartController)
-app.use("", productController); app.use("",mensproductcontroller); 
+app.get(
+  "/auth/google",
+  passport.authenticate("google", { scope: ["profile", "email"] })
+);
 
+app.get(
+  "/auth/google/callback",
+  passport.authenticate("google", {
+    failureRedirect: "/login",
+    session: false,
+  }),
 
+  function (req, res) {
+    // console.log(req.user)
+    const token = generateToken(req.user);
+    return res.status(200).send({ user: req.user, token });
+  }
+);
 
-module.exports  = app;
+// Route passing => Controllers
+app.use("/products", productController);
+// app.use("/users", userController)
+app.use("/carts", cartController);
+app.use("", productController);
+app.use("", mensproductcontroller);
+
+module.exports = app;
