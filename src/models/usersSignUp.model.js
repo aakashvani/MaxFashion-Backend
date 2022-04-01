@@ -10,4 +10,4 @@ const signupSchema = new mongoose.Schema({
     versionKey: false,
 })
 
-module.exports = mongoose.model('user',signupSchema) ;
+module.exports = mongoose.model('test',signupSchema) ;

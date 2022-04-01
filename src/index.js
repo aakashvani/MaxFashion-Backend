@@ -13,6 +13,7 @@ const mensproductcontroller = require("./controllers/mensproduct.controller");
 const productController = require("./controllers/product.controllers");
 const cartController = require("./controllers/cart.controllers");
 const passport = require("./configs/google-oauth");
+const signupController = require('./controllers/userSignUp.controller')
 
 const app = express();
 app.use(express.json());
@@ -47,5 +48,5 @@ app.use("/products", productController);
 app.use("/carts", cartController);
 app.use("", productController);
 app.use("", mensproductcontroller);
-
+app.use("/signup", signupController)
 module.exports = app;
