@@ -1,9 +1,7 @@
 const app = require('./index');
 const PORT = process.env.PORT ||  5000;
 
-const connect = require('./configs/db')
-
-
+const connect = require("./configs/db");
 
 app.listen(PORT, async () => {
     try {
@@ -13,4 +11,3 @@ app.listen(PORT, async () => {
         console.error(err.message);
     }
 });
-
