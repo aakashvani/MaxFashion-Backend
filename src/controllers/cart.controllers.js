@@ -2,6 +2,8 @@ const express = require("express");
 
 const Cart = require("../models/cart.models");
 
+const authenticate = require("../middlewares/authenticate");
+
 const router = express.Router();
 // <-----trying new one---------->
 // router.post(" ", async (req, res) => {
@@ -67,7 +69,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.patch("/:id", async (req, res) => {
+router.patch("/:id",authenticate, async (req, res) => {
   try {
     const cart = await Cart.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
@@ -81,7 +83,7 @@ router.patch("/:id", async (req, res) => {
   }
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id",authenticate, async (req, res) => {
   try {
     const cart = await Cart.findByIdAndDelete(req.params.id).lean().exec();
 
@@ -91,7 +93,7 @@ router.delete("/:id", async (req, res) => {
   }
 });
 
-router.get("/currentuser", async (req, res) => {
+router.get("/currentuser",authenticate, async (req, res) => {
   try {
     let user_id = req.body._id;
     const items = await Cart.findOne({ user_id: user_id })
