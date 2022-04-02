@@ -16,8 +16,7 @@ const mensproductcontroller = require("./controllers/mensproduct.controller");
 const productController = require("./controllers/product.controllers");
 const cartController = require("./controllers/cart.controllers");
 const passport = require("./configs/google-oauth");
-const signupController = require('./controllers/userSignUp.controller')
-
+const signupController = require("./controllers/userSignUp.controller");
 
 // Google OAuth- Login & Signup
 app.post("/register", register);
@@ -37,7 +36,8 @@ app.get(
 
   function (req, res) {
     // console.log(req.user)
-    return res.redirect('http://127.0.0.1:5502/index.html')
+    // localStorage.setItem("userName", (req.user.name))
+    return res.redirect("http://127.0.0.1:5502/index.html");
     const token = generateToken(req.user);
     return res.status(200).send({ user: req.user, token });
   }
@@ -46,7 +46,6 @@ app.get(
 // Route passing => Controllers
 app.use("/products", productController);
 app.use("/carts", cartController);
-app.use("", productController);
-app.use("", mensproductcontroller);
-app.use("/signup", signupController)
+app.use("/mens", mensproductcontroller);
+app.use("/signup", signupController);
 module.exports = app;

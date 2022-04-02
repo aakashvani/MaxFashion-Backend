@@ -3,12 +3,51 @@ const express = require("express");
 const Cart = require("../models/cart.models");
 
 const router = express.Router();
+// <-----trying new one---------->
+// router.post(" ", async (req, res) => {
+//   try {
+//     console.log(req.user._id, req.body);
+//     const item = await Cart.create({
+//       ...req.body,
+//       type : "cart",
+//       user : req.user._id
+//     });
 
-router.post("", async (req, res) => {
+//     return res.send(item)
+
+//   } catch (err) {
+//     return res.status(500).send({message : err.message})
+//   }
+// });
+
+// router.get("", async (req, res) => {
+//   try {
+//       const cart = await Cart.find({type : 'cart',
+//     user : req.user._id}).populate("product");
+
+//     return res.send({cart})
+//   } catch (err) {
+//     return res.status(500).send({message : err.message})
+
+//   }
+// })
+
+// <-----------------Ending trying new one------------------>
+router.post("/", async (req, res) => {
   try {
     const cart = await Cart.create(req.body);
 
     return res.status(201).send(cart);
+  } catch (err) {
+    return res.status(500).send({ err: err.message });
+  }
+});
+
+router.get("", async (req, res) => {
+  try {
+    const carts = await Cart.find().lean().exec();
+
+    return res.status(200).send(carts);
   } catch (err) {
     return res.status(500).send({ err: err.message });
   }
