@@ -9,7 +9,7 @@ require("dotenv").config()
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:5000/auth/google/callback"
+    callbackURL: "https://max-fashion-backend.herokuapp.com/auth/google/callback"
   },
   async function(accessToken, refreshToken, profile, cb) {
 
