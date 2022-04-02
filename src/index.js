@@ -13,7 +13,7 @@ const {
   generateToken,
 } = require("./controllers/auth.controller");
 const mensproductcontroller = require("./controllers/mensproduct.controller");
-const productController = require("./controllers/product.controllers");
+const womenController = require("./controllers/product.controllers");
 const cartController = require("./controllers/cart.controllers");
 const passport = require("./configs/google-oauth");
 const signupController = require("./controllers/userSignUp.controller");
@@ -44,7 +44,7 @@ app.get(
 );
 
 // Route passing => Controllers
-app.use("/products", productController);
+app.use("/womens", womenController);
 app.use("/carts", cartController);
 app.use("/mens", mensproductcontroller);
 app.use("/signup", signupController);

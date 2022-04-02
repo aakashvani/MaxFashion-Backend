@@ -69,7 +69,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.patch("/:id",authenticate, async (req, res) => {
+router.patch("/:id", async (req, res) => {
   try {
     const cart = await Cart.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
@@ -83,7 +83,7 @@ router.patch("/:id",authenticate, async (req, res) => {
   }
 });
 
-router.delete("/:id",authenticate, async (req, res) => {
+router.delete("/:id", async (req, res) => {
   try {
     const cart = await Cart.findByIdAndDelete(req.params.id).lean().exec();
 
