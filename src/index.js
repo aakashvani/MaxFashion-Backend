@@ -35,8 +35,7 @@ app.get(
   }),
 
   function (req, res) {
-    // console.log(req.user)
-    // localStorage.setItem("userName", (req.user.name))
+    
     return res.redirect("https://maxfashion-clone.netlify.app/");
     const token = generateToken(req.user);
     return res.status(200).send({ user: req.user, token });
