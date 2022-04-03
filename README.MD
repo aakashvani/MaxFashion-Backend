@@ -49,6 +49,13 @@ This is a follow up project of unit 3 project. In unit 4, we are more focusing o
 
 #### In the Similar way you can get api by using mens & carts instead of womens
 
+#### Use Post Method for Signup and Login
+
+```http
+  https://max-fashion-backend.herokuapp.com/register
+  https://max-fashion-backend.herokuapp.com/login
+```
+
 
 
 
