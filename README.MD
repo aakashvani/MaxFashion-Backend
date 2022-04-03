@@ -32,9 +32,9 @@ This is a follow up project of unit 3 project.In unit 3 we were focus on fronten
 
 ## Demo
 
-Video Demo Link:-
+- [Aakash Kumar](https://drive.google.com/file/d/1yJRRwawuQnKej5v2OvwAiMqNUclnEVth/view?usp=sharing)
+- [Github repo link](https://github.com/Aakashvani/MaxFashion-Backend)
+- [Blog Link](https://github.com/Aakashvani)
 
-Github repo link:-
 
-Deployed Link:-
 
