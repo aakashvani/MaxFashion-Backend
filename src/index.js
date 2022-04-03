@@ -35,8 +35,6 @@ app.get(
   }),
 
   function (req, res) {
-    // console.log(req.user)
-    // localStorage.setItem("userName", (req.user.name))
     return res.redirect("http://127.0.0.1:5502/index.html");
     const token = generateToken(req.user);
     return res.status(200).send({ user: req.user, token });
