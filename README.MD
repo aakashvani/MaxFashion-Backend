@@ -7,7 +7,7 @@
 
 Max Fashion is an Emirati fashion brand under the banner of the Mumbai based Landmark Group. The brand was first launched in May, 2004, in Middle East in UAE.
 
-This is a follow up project of unit 3 project.In unit 3 we were focus on frontend mainly, But this time we build backend for this website.
+This is a follow up project of unit 3 project. In unit 4, we are more focusing on Backend.
 
 
 
