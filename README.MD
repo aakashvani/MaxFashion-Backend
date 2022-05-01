@@ -21,7 +21,8 @@ This is a follow up project of unit 3 project. In unit 4, we are more focusing o
 ## Demo
 
 - [Video Presentation](https://drive.google.com/file/d/1yJRRwawuQnKej5v2OvwAiMqNUclnEVth/view?usp=sharing)
-- [Github repo link](https://github.com/Aakashvani/MaxFashion-Backend)
+- [Github backend repo link](https://github.com/Aakashvani/MaxFashion-Backend)
+- [Github fronted repo link](https://github.com/Aakashvani/MaxFashion-Clone)
 - [Blog Link](https://github.com/Aakashvani)
 
 
