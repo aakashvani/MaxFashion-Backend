@@ -8,6 +8,9 @@ Max Fashion is an Emirati fashion brand under the banner of the Mumbai based Lan
 
 This is a follow up project of unit 3 project. In unit 4, we are more focusing on Backend.
 
+## Frontend Github Repo
+- [Link](https://github.com/Aakashvani/MaxFashion-Clone)
+
 
 
 
