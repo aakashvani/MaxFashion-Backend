@@ -54,7 +54,7 @@ This is a follow up project of unit 3 project. In unit 4, we are more focusing o
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**:- GET /api/womens/${id}  |
+| `id`      | `string` | **Required**:- GET ```/api/womens/${id}``` |
 
 #### In the Similar way you can get api by using mens & carts instead of womens
 
@@ -72,41 +72,21 @@ This is a follow up project of unit 3 project. In unit 4, we are more focusing o
 
 ## Screenshots
 
+ ```
  api/womens
+ ```
 ![App Screenshot](https://www.linkpicture.com/q/womens-API.png)
+```
 api/mens/${_id}
+```
 ![App Screenshot](https://www.linkpicture.com/q/mensID.png)
+```
 api/carts
+```
 ![App Screenshot](https://www.linkpicture.com/q/carts-API.png)
 
 
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**:- GET /api/womens/${id}  |
-
-#### In the Similar way you can get api by using mens & carts instead of womens
-
-#### Use Post Method for Signup and Login
-
-```http
-  https://max-fashion-backend.herokuapp.com/register
-```
-```http
-  https://max-fashion-backend.herokuapp.com/login
-```
-
-
-
-
-## Screenshots
-
- api/womens
-![App Screenshot](https://www.linkpicture.com/q/womens-API.png)
-api/mens/${_id}
-![App Screenshot](https://www.linkpicture.com/q/mensID.png)
-api/carts
-![App Screenshot](https://www.linkpicture.com/q/carts-API.png)
 
 
 ## Team Members and Contributors
