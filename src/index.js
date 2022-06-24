@@ -37,6 +37,8 @@ app.get(
   function (req, res) {
     
     return res.redirect("https://maxfashion-clone.netlify.app/");
+    
+   // return res.redirect("http://127.0.0.1:5502/index.html");
     const token = generateToken(req.user);
     return res.status(200).send({ user: req.user, token });
   }
