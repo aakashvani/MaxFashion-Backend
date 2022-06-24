@@ -82,7 +82,7 @@ api/carts
 
 ## Team Members and Contributors
 
-- [Akashy Kumar](https://github.com/Akshay-Singh-Rajput)
+- [Akshay Kumar](https://github.com/Akshay-Singh-Rajput)
 - [Aakash Kumar](https://github.com/Aakashvani)
 - [Aditya Choubey](https://github.com/Aadi0706)
 - [Roshan Arikar ](https://github.com/roshanarikar)
