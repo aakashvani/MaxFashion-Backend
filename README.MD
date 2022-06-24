@@ -80,15 +80,6 @@ api/carts
 ![App Screenshot](https://www.linkpicture.com/q/carts-API.png)
 
 
-## Team Members and Contributors
-
-- [Akashy Kumar](https://github.com/Akshay-Singh-Rajput)
-- [Aditya Choubey](https://github.com/Aadi0706)
-- [Roshan Arikar ](https://github.com/roshanarikar)
-- [Manjeet Singh](https://github.com/manjeetsingh100001)
-- [Aakash Kumar](https://github.com/Aakashvani)
-- [Bhanujit Halder](https://github.com/Bhanujit)
-=======
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
